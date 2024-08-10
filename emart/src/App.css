@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    color: rgb(0, 0, 0);
+}
+.navsection{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 55px;
+}
+.prosection{
+    display: flex;
+    padding-left: 20px;
+}
+
+
+.imgsec{
+    width: 40%;
+
+}
+.prosection h2{
+    margin: 10px;
+    color: rgb(255, 251, 251);
+}
+.pageSection{
+    display: grid;
+    grid-template-columns:repeat(4,300px) ;
+}
+.submenu ul li{
+    list-style: none;
+    margin: 38px;
+    margin-top: 10px;
+} .submenu ul{
+    display: inline flex;
+}
+.submenu{
+    background-color: antiquewhite;
+    color: black; 
+    height: 35px;
+}
+.ind-imgage{
+    width: 500px;
+    height: 500px;
+}
+.ind-section{
+    display: flex;
+}
+.ind-dedtails{
+    padding: 20px;
+}
+.ind-imgage img{
+    width: 100%;
+}
+.space{
+    margin: 10px;
+}
+.ind-details button{
+    background-color: aquamarine;
+    padding: 10px;
+    width: 10rem;
+    border-radius: 5px;
+    columns: white;
+}
+/* Container for the whole MobilePages */
+#mobile-pages .page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the start of the row */
+    padding: 20px;
+  }
+  
+  
+  /* Styling for each mobile item */
+  #mobile-pages .mobile-item {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 calc(20% - 40px); /* Responsive columns: 5 items per row */
+    box-sizing: border-box;
+    position: relative; /* Required for the ::after pseudo-element */
+    background: white; /* Ensure the background is white to see the gradient effect */
+  }
+  
+  /* Styling for each mobile's image section */
+  #mobile-pages .mobile-item .pageImg img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Hover effect: scaling, upward movement, and gradient border */
+  #mobile-pages .mobile-item:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+  }
+  
+  /* Gradient background effect confined to the padding area */
+  #mobile-pages .mobile-item::after {
+    content: '';
+    position: absolute;
+    
+    background: linear-gradient(45deg, #ff6f61, #ffcc00, #33cc99, #007bff);
+    background-size: 400% 400%;
+    z-index: -1; /* Behind the content */
+    border-radius: 8px; /* Match the item border radius */
+    animation: gradientBackground 5s ease infinite;
+  }
+  
+  /* Keyframes for gradient animation */
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Styling for the model and company text */
+  #mobile-pages .promodel {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
